@@ -12,3 +12,7 @@ app.get('/', function(req, res) {
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })
+
+app.get('/json/:valami', function(req, res) {
+    console.log(req.params.valami)
+})
