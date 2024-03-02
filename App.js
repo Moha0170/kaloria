@@ -34,12 +34,17 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
         existingData = JSON.parse(data);
     }
 
+    var date = req.params.date;
+
     var newData = {
-      "datum": req.params.date,
-      "etelNeve": req.params.etelNeve,
+      date: [datas]
+    };
+
+    var datas = {
+      "etelNeve": req.params.etelNeve, 
       "kaloria": req.params.kaloria,
       "tomeg": req.params.tomeg
-    };
+    }
 
     existingData.push(newData);
 
