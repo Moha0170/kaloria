@@ -20,8 +20,8 @@ app.get('/json/:valami', function(req, res) {
     console.log(req.params.valami)
 })
 
-app.get('/bevitel/:etelNeve/:kaloria/:tomeg', function(req, res) {
-  console.log(req.params.etelNeve, req.params.kaloria, req.params.tomeg);
+app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
+  console.log(req.params.etelNeve, req.params.kaloria, req.params.tomeg, req.params.date);
   fs.readFile(JSON_FILE_PATH, (err, data) => {
     if (err) {
         console.error('Error reading file:', err);
@@ -35,6 +35,7 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg', function(req, res) {
     }
 
     var newData = {
+      "datum": req.params.date,
       "etelNeve": req.params.etelNeve,
       "kaloria": req.params.kaloria,
       "tomeg": req.params.tomeg

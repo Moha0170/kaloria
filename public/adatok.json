@@ -13,5 +13,15 @@
     "etelNeve": "fasz",
     "kaloria": "120",
     "tomeg": "100"
+  },
+  {
+    "etelNeve": "ham",
+    "kaloria": "45",
+    "tomeg": "11"
+  },
+  {
+    "etelNeve": "ham",
+    "kaloria": "10",
+    "tomeg": "1"
   }
 ]
