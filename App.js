@@ -37,11 +37,11 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
     var most = req.params.date;
 
     var newData = {
-      most: [{
+        "date": most,
         "etelNeve": req.params.etelNeve, 
         "kaloria": req.params.kaloria,
         "tomeg": req.params.tomeg
-      }]
+
     };
 
     existingData.push(newData);

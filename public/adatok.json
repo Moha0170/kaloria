@@ -1,47 +1,8 @@
 [
   {
-    "etelNeve": "fasz",
-    "kaloria": "120",
-    "tomeg": "100"
-  },
-  {
-    "etelNeve": "fasz",
-    "kaloria": "120",
-    "tomeg": "100"
-  },
-  {
-    "etelNeve": "fasz",
-    "kaloria": "120",
-    "tomeg": "100"
-  },
-  {
-    "etelNeve": "ham",
-    "kaloria": "45",
-    "tomeg": "11"
-  },
-  {
-    "etelNeve": "ham",
-    "kaloria": "10",
-    "tomeg": "1"
-  },
-  {
-    "datum": "2024-03-02",
-    "etelNeve": "lajos egy buzi",
-    "kaloria": "2",
-    "tomeg": "2"
-  },
-  {
-    "date": [
-      null
-    ]
-  },
-  {
-    "datum": [
-      {
-        "etelNeve": "ham",
-        "kaloria": "2",
-        "tomeg": "1"
-      }
-    ]
+    "date": "2024-03-02",
+    "etelNeve": "3333",
+    "kaloria": "4444",
+    "tomeg": "5555"
   }
 ]
