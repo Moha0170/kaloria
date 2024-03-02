@@ -5,6 +5,7 @@ body,html {
     font-family: "Poppins", sans-serif;
     margin:0;
     padding:0;
+    font-size:1.5rem;
 }
 hr {
     width:90%;
@@ -19,7 +20,7 @@ hr {
     height:100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     text-align: center;
     background-image:linear-gradient(#3EB489, #55c5bc);
     font-weight:600;
@@ -30,15 +31,39 @@ input {
     background:#ffffff33;
     text-align:center;
 }
-.forms {
-    width: 100%;
-    max-width: 400px;
+.forms,.data {
+    margin:50px 20px;
+    flex:4;
     padding: 20px;
-    background-color: #ffffff33;
+    background-color: #ffffff11;
     border-radius: 5px;
     box-sizing: border-box;
     box-shadow: 0 0 10px 0 #00000033;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    form {
+        width:100%;
+    
+    }
+
 }
+.data {
+    flex:15;
+    flex-direction: row;
+    #lista,#kor {
+        flex:1;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border:1px solid black;
+    }
+}
+
+
 input:not([type="submit"]) {
     width: 100%;
     padding: 10px;
@@ -68,16 +93,16 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    input[type="number"] {
+        flex:15;
+        margin:5px 20px 5px 0;
+    
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-align:center;
+    }
+    input[type="submit"] {
+        flex:1;
+    }
 }
 
-.cel input[type="number"] {
-    flex:15;
-    margin:5px 20px 5px 0;
-
-    border-radius: 5px;
-    box-sizing: border-box;
-    text-align:center;
-}
-.cel input[type="submit"] {
-    flex:1;
-}
