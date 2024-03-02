@@ -26,5 +26,11 @@ document.getElementById("bevitel").addEventListener("click", (event) =>{
     var url = "http://localhost:3000/bevitel/" +  etel + "/" + kaloria + "/" + tomeg + "/" + formatDate(date);
     xhr.open("GET", url);
     xhr.send();
-    
+})
+document.getElementById("celgomb").addEventListener("click", (event) =>{
+    event.preventDefault();
+    var cel = document.getElementById("cel").value;
+    var url = "http://localhost:3000/celgomb/" +  cel;
+    xhr.open("GET", url);
+    xhr.send();
 })

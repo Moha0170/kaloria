@@ -5,6 +5,7 @@ const path = require('path');
 const fs = require('fs');
 
 const JSON_FILE_PATH = path.join(__dirname, '/public/adatok.json');
+const JSON_FILE_PATH_CEL = path.join(__dirname, '/public/cel.json');
 app.use(express.static(__dirname + '/public'));
 app.use(express.json());
 
@@ -47,6 +48,37 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
     existingData.push(newData);
 
     fs.writeFile(JSON_FILE_PATH, JSON.stringify(existingData, null, 2), (err) => {
+        if (err) {
+            console.error('Error writing file:', err);
+            res.status(500).send('Error writing file');
+            return;
+        }
+        console.log('Data written successfully');
+        res.status(200).send('Data written successfully');
+    });
+  });
+})
+
+
+
+app.get('/celgomb/:cel', function(req, res) {
+  console.log(req.params.cel);
+  fs.readFile(JSON_FILE_PATH_CEL, (err, data) => {
+    if (err) {
+        console.error('Error reading file:', err);
+        res.status(500).send('Error reading file');
+        return;
+    }
+
+    if (data.length > 0) {
+        existingData = JSON.parse(data);
+    }
+    var newData = {
+        "cel": req.params.cel
+    };
+
+
+    fs.writeFile(JSON_FILE_PATH_CEL, JSON.stringify(newData, null, 2), (err) => {
         if (err) {
             console.error('Error writing file:', err);
             res.status(500).send('Error writing file');
