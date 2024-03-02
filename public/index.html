@@ -3,35 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/output.css">
     <title>Kalóriaszámítás</title>
 </head>
 <body>
     <div class="container">
         <div class="forms">
-    <form>
-        
+            <form>
+                
 
-        <label for="nev">Étel neve:</label><br>
-        <input type="text" id="nev"><br>
+                <label for="nev">Étel neve:</label><br>
+                <input type="text" id="nev"><br>
 
-        <label for="kaloriaszaz">Kalória érték /100g:</label><br>
-        <input type="number" id="kaloriaszaz"><br>
+                <label for="kaloriaszaz">Kalória érték /100g:</label><br>
+                <input type="number" id="kaloriaszaz"><br>
 
-        <label for="tomeg">Étel tömege:</label><br>
-        <input type="number" id="tomeg"><br>
-        
-        <input type="submit" name="submit" value="Bevitel" id="bevitel">
-    </form>
-    
-    <hr>
-    
-    <form class="cel">
-        <input type="number" id="cel" placeholder="Kalóriabeviteli cél">
-        <input type="submit" name="submit" value="&#10003;">
-    </form>
-</div>
+                <label for="tomeg">Étel tömege:</label><br>
+                <input type="number" id="tomeg"><br>
+                
+                <input type="submit" name="submit" value="Bevitel" id="bevitel">
+            </form>
+            
+            <hr>
+            
+            <form class="cel">
+                <input type="number" id="cel" placeholder="Kalóriabeviteli cél">
+                <input type="submit" name="submit" value="&#10003;">
+            </form>
+
+        </div>
+
+        <div class="data">
+            <div id="lista">
+                <div id="bevitt"></div>
+            </div>
+            <div id="kor">
+                kor
+            </div>
+            </div>
+            
+        </div>
+
 </div>
 </body>
 <script src="/client.js"></script>
+<script src="/viewData.js"></script>
 </html>
