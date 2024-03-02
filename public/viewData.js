@@ -1,12 +1,20 @@
 
+
 async function BevittKaloria(date) {
 
     const response = await fetch(`/data/${date}`);
     const data = await response.json();
 
     kcal = 0;
+
+
     data.forEach(element => {
-        kcal+= element.kaloria*(element.tomeg/100);
+
+        if (element.tomeg == 0) {
+            kcal += parseInt(element.kaloria);
+        } else {
+            kcal+= element.kaloria*(element.tomeg/100);
+        }
     });
 
 
@@ -29,4 +37,4 @@ async function updateScreen(date = "2024-03-02") {
 
 }
 
-updateScreen("2024-03-01");
+updateScreen("2024-03-02");

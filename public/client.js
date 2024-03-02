@@ -17,12 +17,21 @@ function formatDate(date) {
 
 
 document.getElementById("bevitel").addEventListener("click", (event) =>{
+    var kaka = document.getElementById("kaka")
     var date = Date.now();
     // console.log(formatDate(date))
     var etel = document.getElementById("nev").value 
     var kaloria = document.getElementById("kaloriaszaz").value 
     var tomeg = document.getElementById("tomeg").value
-    var url = "http://localhost:3000/bevitel/" +  etel + "/" + kaloria + "/" + tomeg + "/" + formatDate(date);
+
+    if (kaka.style.visibility === "visible") {
+        var url = "http://localhost:3000/bevitel/" +  etel + "/" + kaloria + "/" + tomeg + "/" + formatDate(date);
+    }
+    else {
+        var url = "http://localhost:3000/bevitel/" +  etel + "/" + kaloria + "/" + 0 + "/" + formatDate(date);
+    }
+
+    
     xhr.open("GET", url);
     xhr.send();
 })
@@ -31,4 +40,23 @@ document.getElementById("celgomb").addEventListener("click", (event) =>{
     var url = "http://localhost:3000/celgomb/" +  cel;
     xhr.open("GET", url);
     xhr.send();
+})
+
+
+
+document.getElementById("valtb").addEventListener("click", (event) =>{
+
+    var kaka = document.getElementById("kaka")
+    var kalertek = document.getElementById("kalertek")
+
+    if (kaka.style.visibility === "visible") {
+        kaka.style.visibility = "hidden";
+        kaka.style.maxHeight = "0px";
+        kalertek.innerHTML = "Kalória érték:";
+
+    } else {
+        kaka.style.visibility = "visible";
+        kaka.style.maxHeight = "1000px";
+        kalertek.innerHTML = "Kalória érték /100g:";
+    }
 })
