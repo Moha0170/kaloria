@@ -34,5 +34,14 @@
     "date": [
       null
     ]
+  },
+  {
+    "datum": [
+      {
+        "etelNeve": "ham",
+        "kaloria": "2",
+        "tomeg": "1"
+      }
+    ]
   }
 ]
