@@ -2,7 +2,19 @@
   {
     "date": "2024-03-02",
     "etelNeve": "3333",
-    "kaloria": "4444",
-    "tomeg": "5555"
+    "kaloria": "500",
+    "tomeg": "100"
+  },
+  {
+    "date": "2024-03-02",
+    "etelNeve": "3333",
+    "kaloria": "200",
+    "tomeg": "100"
+  },
+  {
+    "date": "2024-03-01",
+    "etelNeve": "3333",
+    "kaloria": "400",
+    "tomeg": "10"
   }
 ]

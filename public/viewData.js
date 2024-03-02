@@ -6,7 +6,7 @@ async function BevittKaloria(date) {
 
     kcal = 0;
     data.forEach(element => {
-        
+        kcal+= element.kaloria*(element.tomeg/100);
     });
 
 
@@ -18,13 +18,15 @@ async function maxKaloria() {
 
     kcal = data.cel;
     return kcal;
-    
+
 }
 
-function updateScreen(date) {
-    maxKaloria= maxKaloria();
-    bevittKcal = BevittKaloria(date);
+async function updateScreen(date = "2024-03-02") {
+    maxKaloria= await maxKaloria();
+    bevittKcal = await BevittKaloria(date);
     
     document.getElementById("bevitt").innerHTML = `Bevitt kalória: ${bevittKcal}/${maxKaloria} kcal`;
 
 }
+
+updateScreen("2024-03-01");

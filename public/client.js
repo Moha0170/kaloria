@@ -17,7 +17,6 @@ function formatDate(date) {
 
 
 document.getElementById("bevitel").addEventListener("click", (event) =>{
-    event.preventDefault();
     var date = Date.now();
     // console.log(formatDate(date))
     var etel = document.getElementById("nev").value 
@@ -28,7 +27,6 @@ document.getElementById("bevitel").addEventListener("click", (event) =>{
     xhr.send();
 })
 document.getElementById("celgomb").addEventListener("click", (event) =>{
-    event.preventDefault();
     var cel = document.getElementById("cel").value;
     var url = "http://localhost:3000/celgomb/" +  cel;
     xhr.open("GET", url);

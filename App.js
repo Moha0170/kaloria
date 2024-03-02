@@ -89,3 +89,45 @@ app.get('/celgomb/:cel', function(req, res) {
     });
   });
 })
+
+
+app.get('/data/:date', function(req, res) {
+
+    fs.readFile(JSON_FILE_PATH, (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            res.status(500).send('Error reading file');
+            return;
+        }
+
+   
+        
+        datum = req.params.date;
+
+        dList = []
+
+        const jsondata = JSON.parse(data);
+        
+        jsondata.forEach(element => {
+            if (element.date == datum) {
+                dList.push(element);
+            }
+        });
+        
+        res.status(200).send((dList));
+    });
+})
+
+app.get('/kcal', function(req, res) {
+    fs.readFile(JSON_FILE_PATH_CEL, (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            res.status(500).send('Error reading file');
+            return;
+        }
+        if (data.length > 0) {
+            existingData = JSON.parse(data);
+        }
+        res.status(200).send(existingData);
+    });
+})
