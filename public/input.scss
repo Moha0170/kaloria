@@ -26,6 +26,7 @@ body,html {
     margin:0;
     padding:0;
     font-size:1.5rem;
+    user-select: none;
 }
 hr {
     width:90%;
@@ -70,24 +71,61 @@ hr {
 }
 
 .datum {
-    height:20%;
+    height:10%;
+    button {
+        border:none;
+        padding:0 0.5rem;
+        background:none;
+        font-weight:bolder;
+        font-size:1.5rem;
+        transition:200ms;
+    }
+    button:hover {
+        cursor:pointer;
+        text-shadow: 0 0 10px #000000b7;
+        color:#45a049;
+        transition:200ms;
+    }
+}
+#date1 {
+    visibility:hidden;
+}
+.szovegfix {
+    width:80%;
+    height:10%;
+    position:relative;
+    border: 2px solid black;
+    border-radius:20px;
+    
+}
+#bar {
+    height:100%;
+    border-radius:19px;
 }
 #bevitt {
-    height:20%;
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:10%;
+
 }
 #felvettLista {
-    height:80%;
+    margin-top:5px;
+    height:75%;
     width:100%;
     overflow-y:scroll;
     text-align:left;
     display: flex;
     flex-direction: column;
     align-items: center;
+    
     div {
         width:98%;
         background-color:#ffffff33;
         padding:5px 0;
         margin:5px 0;
+        position:relative;
+        border-radius:5px;
     }
     h1,p {
         padding:0px 20px;
@@ -100,6 +138,24 @@ hr {
         font-size:0.8rem;
         margin-left:10px;
     }
+    button {
+        position:absolute;
+        bottom:20px;
+        right:20px;
+        border:none;
+        background-color:#4CAF50;
+        padding:10px;
+        border-radius:5px;
+        color:white;
+    }
+    button:hover {
+        cursor:pointer;
+        color:red;
+    }
+    button:active {
+        background-color:#45a049;
+    }
+
     
 }
 

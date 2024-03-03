@@ -36,8 +36,15 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
     }
 
     var most = req.params.date;
+    var id = 0;
+    try {
+        id = existingData[existingData.length - 1].id + 1
+        } catch (error) {
+            id = 0
+        }
 
     var newData = {
+        "id" : id,
         "date": most,
         "etelNeve": req.params.etelNeve, 
         "kaloria": req.params.kaloria,
@@ -57,6 +64,33 @@ app.get('/bevitel/:etelNeve/:kaloria/:tomeg/:date', function(req, res) {
         res.status(200).send('Data written successfully');
     });
   });
+})
+
+app.delete('/delete/:id', function(req, res) {
+    fs.readFile(JSON_FILE_PATH, (err, data) => {
+        if (err) {
+            console.error('Error reading file:', err);
+            res.status(500).send('Error reading file');
+            return;
+        }
+        let existingData = [];
+        if (data.length > 0) {
+            existingData = JSON.parse(data);
+        }
+        var id = req.params.id;
+        var newData = existingData.filter(function( obj ) {
+            return obj.id !== parseInt(id);
+        });
+        fs.writeFile(JSON_FILE_PATH, JSON.stringify(newData, null, 2), (err) => {
+            if (err) {
+                console.error('Error writing file:', err);
+                res.status(500).send('Error writing file');
+                return;
+            }
+            console.log('Data written successfully');
+            res.status(200).send('Data written successfully');
+        });
+    });
 })
 
 
