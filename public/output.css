@@ -15,6 +15,33 @@ hr {
   height: 1px;
 }
 
+#valtb {
+  margin: 20px 20px;
+  width: 85%;
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #4CAF50;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  user-select: none;
+}
+
+#valtb:hover {
+  cursor: pointer;
+}
+
+#valtb:active {
+  background-color: #45a049;
+}
+
+#kaka {
+  visibility: hidden;
+  max-height: 0px;
+}
+
 .container {
   width: 100%;
   height: 100%;
@@ -45,6 +72,7 @@ input {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .forms form, .data form {
   width: 100%;
