@@ -1,4 +1,4 @@
-
+var defDate = formatDate(Date.now());
 
 async function BevittKaloria(date) {
 
@@ -27,6 +27,33 @@ async function maxKaloria() {
     kcal = data.cel;
     return kcal;
 
+}
+function formatDate(date) {
+    var d = new Date(date),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) 
+        month = '0' + month;
+    if (day.length < 2) 
+        day = '0' + day;
+
+    return [year, month, day].join('-');
+}
+
+function dateChange(change, date){
+    var presentDate = Date.parse(date);
+    var newDate = new Date(presentDate);
+    if (change == 0) {
+        newDate.setDate(newDate.getDate() - 1);
+    }
+    else if (change == 1){
+        newDate.setDate(newDate.getDate() + 1)
+    }
+    presentDate = newDate;
+
+    return formatDate(presentDate);
 }
 
 async function updateScreen(date = "2024-03-02") {
