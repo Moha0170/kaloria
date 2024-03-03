@@ -1,33 +1,68 @@
 [
   {
     "date": "2024-03-02",
-    "etelNeve": "3333",
+    "etelNeve": "falat",
     "kaloria": "500",
     "tomeg": "100"
   },
   {
     "date": "2024-03-02",
-    "etelNeve": "3333",
+    "etelNeve": "falat kettő",
     "kaloria": "200",
     "tomeg": "100"
   },
   {
     "date": "2024-03-01",
-    "etelNeve": "3333",
+    "etelNeve": "hamika",
     "kaloria": "400",
     "tomeg": "10"
   },
   {
     "date": "2024-03-02",
-    "etelNeve": "1312333",
+    "etelNeve": "fincsa",
     "kaloria": "4000",
     "tomeg": "0"
   },
   {
     "date": "2024-03-02",
-    "etelNeve": "12312313",
+    "etelNeve": "punci",
     "kaloria": "3",
     "tomeg": "0"
+  },
+  {
+    "date": "2024-03-03",
+    "etelNeve": "csikló",
+    "kaloria": "13",
+    "tomeg": "0"
+  },
+  {
+    "date": "2024-03-03",
+    "etelNeve": "Az őszibarack vagy őszibarackfa (Prunus persica) a rózsafélék (Rosaceae) családjába és a Prunus nemzetségbe tartozó gyümölcsfa. Legközelebbi rokona a mandula, távolabbi rokonai a szilva és a kajszibarack.  Elnevezése A magyar nyelvben „őszibarack” néven említjük összes termesztett és magról kelt változatát, de a kényesebb, általában késői külföldi fajták „francia barack” néven is ismertek. Voltaképpen mindkét elnevezés helytelen, mert nem „őszi”, hiszen a fajtától függően nyár közepétől érik, és nem is „francia”, mert a jelenleg is termesztett fajták nagyon sok országból: Olaszországból, Oroszországból, Kínából, az USA tagállamaiból (Illinois, Texas) és Kanadából származnak.  Helyes elnevezése csak a barack lenne, ami azért okoz némi bonyodalmat, mert a kajszibarackot is értjük rajta. A sima héjú (nem molyhos) őszibarackot nektarin névvel különböztetjük meg, de nagyon sokan használják a \"kopasz barack\" elnevezést is.  Története Őshazájának régebben Perzsiát tartották, ami a latin növénytani elnevezésében (malum persicum) is kifejezésre jut. A kutatások ezt nem bizonyították, mivel a kínai irodalomban már i.e. több száz évvel, több helyen is említi, ezért feltételezhető, hogy innen származik. Európai elterjedésének forrása Itália, majd Franciaország, ahol a kedvező életkörülmények és tenyésztési feltételek miatt, nem csak termesztik, de fajtáinak szaporítása is fellendült. Oliver De Serres 1604-ben megjelent kertészetről szóló munkájában (Théâtre d’Agriculture), már 12 fajtát ír le.  Az őszibarack-termesztés fellendülésére jellemző, hogy a kereszténység terjesztésével párhuzamosan terjedt el Európa többi országában, mivel a legügyesebb termesztők a szerzetesek voltak. A kolostorok kertjeiben nagy gonddal nevelték, és valószínűleg szaporították is az őszibarackot. Franciaországban keletkeztek az első faiskolák is, 1628-ban már 27 fajtát, 1667-re pedig már 38 fajtáról tesznek említést. Innen terjedt el Belgiumba, Hollandiába, Németországba, de Angliába is.  A 20. század első felében, a budaörsi barack gyakorlatilag fogalommá vált nemcsak Magyarországon, hanem Európa jelentős részén is; Horvátországba, Ausztriába valamint több más országba exportálták. Termesztésének és exportálásának nagy buzdítója, aki a kereskedése élén állt a kettő világháború közti korszakban a budapesti Lenz József (1897–1965), kereskedelmi tanácsos, nagykereskedő, a \"Gyümölcs-, Zöldség- és Élelmi- szerkereskedők Országos Egyesülete\" elnöke, a \"Gyümölcsexportőrök és Importőrök Egyesülete\" elnöke, aki 1937-ben építtetett hűtőházat a budaörsi MÁV pályaudvaron, amelynek a homlokzatát „Barackos Madonna” tondó díszítette.[1]",
+    "kaloria": "12",
+    "tomeg": "0"
+  },
+  {
+    "date": "undefined",
+    "etelNeve": "kurva",
+    "kaloria": "12",
+    "tomeg": "0"
+  },
+  {
+    "date": "2024-03-04",
+    "etelNeve": "seggluk",
+    "kaloria": "3",
+    "tomeg": "0"
+  },
+  {
+    "date": "2024-03-05",
+    "etelNeve": "pina",
+    "kaloria": "100",
+    "tomeg": "0"
+  },
+  {
+    "date": "2024-03-06",
+    "etelNeve": "pina",
+    "kaloria": "100",
+    "tomeg": "0"
   }
-
 ]
