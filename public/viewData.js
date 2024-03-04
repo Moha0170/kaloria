@@ -204,4 +204,4 @@ function changeBar(maxKcal, bevittKcal) {
 
 
 updateScreen(defDate);
-// lajos nem csinalt semmit adjanak neki egyest koszi
+// :))))))))))))))))))))))))
