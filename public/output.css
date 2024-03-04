@@ -26,6 +26,8 @@ body, html {
   padding: 0;
   font-size: 1.5rem;
   user-select: none;
+  background-image: linear-gradient(#3EB489, #55c5bc);
+  background-attachment: fixed;
 }
 
 hr {
@@ -70,8 +72,26 @@ hr {
   justify-content: center;
   align-items: stretch;
   text-align: center;
-  background-image: linear-gradient(#3EB489, #55c5bc);
+  /* background-image:linear-gradient(#3EB489, #55c5bc);
+  background-attachment: fixed; */
   font-weight: 600;
+}
+
+@media screen and (max-width: 1174px) {
+  .container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: auto;
+  }
+  .container .forms, .container .data {
+    width: 90vw;
+  }
+  .datum {
+    font-size: 30px;
+  }
+}
+.formForm {
+  margin-top: 60px;
 }
 
 .datum {
@@ -114,6 +134,7 @@ hr {
   width: 100%;
   position: absolute;
   top: 10%;
+  font-size: 4vmin;
 }
 
 #felvettLista {

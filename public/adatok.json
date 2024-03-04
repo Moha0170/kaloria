@@ -75,5 +75,12 @@
     "etelNeve": "helló",
     "kaloria": "2200",
     "tomeg": "0"
+  },
+  {
+    "id": 14,
+    "date": "2024-03-04",
+    "etelNeve": "etel",
+    "kaloria": "1500",
+    "tomeg": "0"
   }
 ]
